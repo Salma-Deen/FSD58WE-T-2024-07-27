@@ -1,0 +1,151 @@
+
+Recap:
+
+  1. Context
+      1. CreateContext
+      2. Provider with values
+      3. useContext
+  2. useRef
+  3. useReducer
+
+Topics:
+
+  1. Deployment with react-router-dom, please follow below instructions, 
+  
+    Publishing Applications with different page routings
+
+    including _redirects file with below contents,
+
+      /* /index.html 200
+
+      include it in public folder, this file is used by netlify configs
+      basically routes all the path to point to index.html, so out group of will be available to the browser
+
+      only then the pages will work properly, else it won't
+
+  1.1 Simple TicTacToe game.
+
+      TicTacToe game,
+
+      React is to Develop browser based single page application
+
+      1. files jsx, css
+
+      2. jsx, simple div box with 2 horizontal & vertical lines
+          parent box: height & width ( 300 X 300 )
+            |  |  |  |
+            |  |  |  |
+            |  |  |  |
+
+      3. from that we will end having 9 boxes with place X or O
+
+      4. add the simple CSS for the 2 lines & 9 boxes
+
+      5. Game starts with x player then o players and alternatively the turn changes.
+
+        Keep a state variable turn/player
+        keep one more for the array of values in the 9 boxes
+
+      6. Check the winning state,
+          atleast plays should be filled
+
+          Logic for winning with array of values in the 9 boxes
+
+          horizontal Case:
+            1. arr[0] === arr[1] && arr[0] === arr[2]
+            2. arr[3] === arr[4] && arr[3] === arr[5]
+            3. arr[6] === arr[7] && arr[6] === arr[8]
+  
+  2. Using Fetch for API requests
+
+      Mock API: 
+      CRUD:
+        Read - GET
+            Reading the all the data from the Server
+        Create - POST
+        Update - PUT/PATCH
+        Delete - DELETE
+
+      Sample Application:
+        Product Listing - Done
+        Product Creation - Done
+        Product Update - 
+        Product Deletion - Done
+
+      Creation:
+        Create a new product
+
+      Listing:
+        Simple UI which will show all the products in flex-box
+      
+      Delete:
+
+        Deleting a single product
+      
+  3. Implementing CRUD operations using Fetch
+
+Next Session:
+  Updation:
+    Again open the pop up with same form with pre-loaded values
+    update the values and submit the form to update a particular product
+  4. Axios vs Fetch
+
+      Axios - separate library which helps in handling API requests and other API related operations
+
+        Instance: axios allows to keep multiple instances ( Multiple server instances )
+          Take an Example Amazon:
+
+            products.amazon.in - used to retrieve all the products
+            payments.amazon.in - used to handle the payments
+            carts.amazon.in - used to handle the carts
+
+        It uses XHR for api interaction
+
+        Reduces the JSON.stringfy and JSON.parsing ( response.json() )
+
+        Interceptors:
+          added advantage where we can intercept both request & response
+
+      Fetch - JavaScript inbuilt API/fetch for handling API requests & other API related operations
+
+      Fetch is also capable of doing all the things that axios can do
+
+      But axios do those in a simpler way
+
+  5. React Advanced:
+
+    Optimization Techniques to Improve the performance
+
+      memo:
+
+      useCallback:
+        to avoid un-necessary re-renders/rendering
+
+      useMemo:
+        https://react.dev/reference/react/useMemo
+    
+      lazy and suspense
+
+Task:
+  Day - 27: https://docs.google.com/document/d/1-qvT8VkH2Bvv16hYm-qNiwfusRSt9ACJmceJLpLV9x8/edit
+  use mock-api or the api in the task sheet
+
+    Creat a Simple UI Form for User Creation using the below fields,
+      name
+      email
+      phone
+      zipcode
+      addressLine
+      city
+      image
+    
+    Collect the information and display in the console
+
+    Implementing with Axios will be discussed in the next session
+
+    Note: use mock-api if Your using the flow discussed in the session
+
+System Requirements:
+  HQ Processor if possible else hu Processor
+  16gb  ram
+  250 / 500 gb SSD
