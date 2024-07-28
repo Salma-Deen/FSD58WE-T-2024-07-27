@@ -19,7 +19,7 @@ Topics:
       /* /index.html 200
 
       include it in public folder, this file is used by netlify configs
-      basically routes all the path to point to index.html, so out group of will be available to the browser
+      basically routes all the path to point to index.html, so our group of routers will be available to the browser
 
       only then the pages will work properly, else it won't
 
